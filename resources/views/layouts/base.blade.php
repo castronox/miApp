@@ -13,12 +13,24 @@
     <!-- Estilos personalizados -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
-        html, body {
+        html,
+        body {
             height: 100%;
         }
+
         .content {
             height: 100%;
             overflow: auto;
+        }
+
+        .sidebar a {
+            color: inherit;
+            /* Hereda el color del texto definido en text-light */
+        }
+
+        .sidebar a:hover {
+            color: lightgray;
+            /* Opcional: cambia el color al pasar el ratón */
         }
     </style>
 </head>
@@ -27,11 +39,11 @@
     <!-- Barra de navegación -->
     <div class="container-fluid h-100">
         <div class="row h-100">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar text-light h-100">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark text-light  sidebar h-100">
                 <div class="position-sticky pt-3">
-                    <ul class="nav flex-column">
+                    <ul class="nav flex-column ">
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" href="/">Inicio</a>
                         </li>
                         <li class="nav-item p-3">
                             <a class="nav-link" href="#">Compras</a>
@@ -40,10 +52,10 @@
                             <a class="nav-link" href="#">Departamentos</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Exportes</a>
+                            <a class="nav-link" href="#">Exportaciones</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Ventas</a>
+                            <a class="nav-link" href="/ventas">Ventas</a>
                         </li>
                         <li class="nav-item p-3">
                             <a class="nav-link" href="#">Usuarios</a>
