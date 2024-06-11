@@ -20,5 +20,7 @@
             Esta es una página de ventas de ejemplo usando Bootstrap.
         </div>
 
+        <a class="btn btn-primary" href="{{url ('/') }}" role="button">Inicio</a>
+
     </div>
-    @endsection
+@endsection
