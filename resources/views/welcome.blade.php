@@ -2,7 +2,7 @@
 
 @section('contenido')
 <br>
-<div class="text-center ">
-<a class="btn btn-primary" href="{{url ('/ventas') }}" role="button">ventas</a>
+<div class="text-center">
+<h1>Inicio de la aplicación</h1>
 </div>
 @endsection

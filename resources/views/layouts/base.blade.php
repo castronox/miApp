@@ -43,25 +43,25 @@
                 <div class="position-sticky pt-3">
                     <ul class="nav flex-column ">
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="/">Inicio</a>
+                            <a class="nav-link" href="{{url ('/') }}">Inicio</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Compras</a>
+                            <a class="nav-link" href="{{url ('/compras') }}">Compras</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Departamentos</a>
+                            <a class="nav-link" href="{{url ('/departamentos') }}">Departamentos</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Exportaciones</a>
+                            <a class="nav-link" href="{{url ('/exportaciones') }}">Exportaciones</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="/ventas">Ventas</a>
+                            <a class="nav-link" href="{{url ('/ventas') }}">Ventas</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Usuarios</a>
+                            <a class="nav-link" href="{{url ('/usuarios') }}">Usuarios</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="#">Información del usuario</a>
+                            <a class="nav-link" href="{{url ('/perfil') }}">Información del usuario</a>
                         </li>
                         <li class="nav-item p-3">
                             <a class="nav-link" href="#">Cerrar sesión</a>
@@ -72,21 +72,12 @@
 
             <!-- Contenido principal -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 content">
-                <br><br>
-                <h1 class="text-center mb-4">Bienvenido al sistema</h1>
-                <h3 class="lead text-center">Hola Usuario, ha ingresado correctamente al sistema.</h3>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            Esta es la base de la aplicación, debajo se colocará todo el contenido dinámico.
-                            <br><br>
-                            <!-- Contenido dinámico de la aplicación -->
-                            @yield('contenido')
-                        </div>
-                    </div>
+                <div class="d-flex justify-content-between flex-wrap p-3 mb-3" >
+
+                    @yield('contenido')
                 </div>
             </main>
-        </div>
+        </div>                         
     </div>
 </body>
 
